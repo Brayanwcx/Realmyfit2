@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Animado - Realmyfit</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+
+<body>
+     <nav>
+      <div class="nav__banner-fullwidth">
+  <div class="nav__logo">
+    <a href="../PaginaDeInicio/Principal.html"><img src="../PaginaDeInicio/img/Black_and_Blue_Illustrative_Health_and_Fitness_Sporting_Club_Logo-removebg-preview.png" alt="logo" /></a>
+  </div>
+  
+  <ul class="nav__links">
+    <li class="link"><a href="../PaginaDeInicio/Principal.html">Inicio</a></li>
+    <li class="link"><a href="../Eventos/eventos.html">Eventos</a></li>
+    <li class="dropdown">
+      <a href="">Servicios</a>
+      <div class="dropdown-content">
+        <a href="../Servicios/Membresias/Membresias.html">Membresía</a>
+        <a href="../Servicios/Productos/Productos.html">Productos</a>
+        <a href="../Servicios/Entrenadores/entrenadores.html">Entrenadores</a>
+        <a href="../Servicios/Maquinas/maquinas.html">Máquinas</a>
+      </div>
+    </li>
+    <li class="link"><a href="../Reseñas/reseñas.html">Reseñas</a></li>
+    <li class="link"><a href="../Contacto/index.html">Contacto</a></li>
+  </ul>
+  <a href="../login/Index.html"><button class="btn">Iniciar Sesion</button></a>
+  </div>
+</nav>
+
+    <div class="floating-bubbles">
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+    </div>
+
+    <form class="animated-form">
+        <div class="form-header">
+            <h1><i class="fas fa-paper-plane"></i> Contáctanos</h1>
+            <p>Envíanos tus datos y te responderemos pronto</p>
+        </div>
+        
+        <div class="form-group">
+            <input type="text" id="nombre" required>
+            <label for="nombre"><i class="fas fa-user"></i> Nombre</label>
+            <div class="underline"></div>
+            <div class="focus-bg"></div>
+        </div>
+        
+        <div class="form-group">
+            <input type="email" id="email" required>
+            <label for="email"><i class="fas fa-envelope"></i> Email</label>
+            <div class="underline"></div>
+            <div class="focus-bg"></div>
+        </div>
+        
+        <div class="form-group">
+            <input type="tel" id="telefono" required>
+            <label for="telefono"><i class="fas fa-phone"></i> Teléfono</label>
+            <div class="underline"></div>
+            <div class="focus-bg"></div>
+        </div>
+        
+        <div class="form-group">
+            <textarea id="mensaje" rows="3" required></textarea>
+            <label for="mensaje"><i class="fas fa-comment"></i> Mensaje</label>
+            <div class="underline"></div>
+            <div class="focus-bg"></div>
+        </div>
+        
+        <button type="submit" class="submit-btn">
+            <span>Enviar Mensaje</span>
+            <i class="fas fa-paper-plane"></i>
+        </button>
+    </form>
+
+    <script src="contacto.js">
+   
+    </script>
+</body>
+</html>
